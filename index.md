@@ -3,7 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Ferienwohnung Kaintz
 ---
+
 
 Zimmer und Preise
 -----------------
@@ -40,6 +42,8 @@ Wetter
 ------
 
 {% include wetter.html %}
+
+Aktuelles Wetter auf der [Podersdorf-Webcam](http://podersdorfamsee.at/Webcam.16.0.html).
 
 
 Anfrage
