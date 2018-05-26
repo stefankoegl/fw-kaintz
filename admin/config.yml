@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: stefankoegl/fw-kaintz
+  branch: master
+
+media_folder: "assets/img"
+
+collections:
+  - name: "pages"
+    label: "Seiten"
+    files:
+      - label: "Startseite"
+        name: "index"
+        file: "index.md"
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Inhalt, name: body, widget: markdown}
+
+      - label: "Anfrage erhalten"
+        name: "anfrage"
+        file: "anfrage.md"
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Inhalt, name: body, widget: markdown}
