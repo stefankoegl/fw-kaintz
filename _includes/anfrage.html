@@ -1,16 +1,42 @@
 <form action="https://formspree.io/stefan@skoegl.net"
 	method="POST">
-	<input type="text" name="name">
-	<input type="text" name="anreise">
-	<input type="text" name="abreise">
-	<select name="zimmer">
-		<option value="klein">Wohnung mit einem Zimmer (3 Personen)</option>
-		<option value="gross">Wohnung mit beiden Zimmern (5 Personen)</option>
-	</select>
-	<input type="email" name="_replyto">
-	<input type="hidden" name="_next" value="https://site.io/thanks.html" />
+  <fieldset>
+    <p>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name">
+    </p>
+
+    <p>
+      <label for="anreise">Anreise</label>
+      <input type="text" name="anreise" id="anreise">
+    </p>
+
+    <p>
+      <label for="abreise">Abreise</label>
+      <input type="text" name="abreise" id="abreise">
+    </p>
+
+    <p>
+      <label for="zimmer">Zimmer</label>
+      <select name="zimmer" id="zimmer">
+        <option value="klein">Wohnung mit einem Zimmer (3 Personen)</option>
+        <option value="gross" selected>Wohnung mit beiden Zimmern (5 Personen)</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="email">E-Mail Adresse</label>
+      <input type="email" name="_replyto" id="email">
+    </p>
+
+	<input type="hidden" name="_next" value="{{ site.url }}/anfrage" />
 	<input type="hidden" name="_subject" value="Ferienwohnung Anfrage" />
 	<input type="hidden" name="_language" value="de" />
-	<input type="submit" value="Send">
+
+    <p>
+      <input type="submit" value="Senden">
+    </p>
+
+  </fieldset>
 </form>
 
