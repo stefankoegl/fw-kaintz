@@ -1,8 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
 title: Ferienwohnung Kaintz
 ---
 
@@ -59,8 +55,7 @@ Sie finden uns an der Adresse [Strandplatz 6, 7141 Podersdorf am See, Österreic
 
 {% include karte.html %}
 
-Anreise
-~~~~~~~
+### Anreise
 
 * Frühester Check-in: 14:00
 * Spätester Check-out: 10:00
