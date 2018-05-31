@@ -60,11 +60,41 @@ input, select, textarea, button {
     width: 100%;
 }
 
-#zimmer-und-preise:before {
+#zimmer-und-preise:before,
+#ausstattung:before,
+#lage:before,
+#anreise:before,
+#wetter:before,
+#anfrage:before {
     font-family: 'Font Awesome\ 5 Free';
-    content: "\f236";
     font-weight: 900;
     padding-right: .3em;
 }
+
+#zimmer-und-preise:before {
+    content: "\f236";
+}
+
+#ausstattung:before {
+    content: "\f005";
+}
+
+#lage:before {
+    content: "\f041";
+}
+
+#anreise:before {
+    content: "\f1b9";
+}
+
+#wetter:before {
+    content: "\f185";
+}
+
+#anfrage:before {
+    content: "\f073";
+}
+
+
 
 /* color: #FFC644; */
