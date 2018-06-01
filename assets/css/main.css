@@ -65,7 +65,8 @@ input, select, textarea, button {
 #lage:before,
 #anreise:before,
 #wetter:before,
-#anfrage:before {
+#anfrage:before,
+#verfügbarkeit:before {
     font-family: 'Font Awesome\ 5 Free';
     font-weight: 900;
     padding-right: .3em;
@@ -92,9 +93,11 @@ input, select, textarea, button {
 }
 
 #anfrage:before {
-    content: "\f073";
+    content: "\f0e0";
 }
 
-
+#verfügbarkeit:before {
+    content: "\f073";
+}
 
 /* color: #FFC644; */

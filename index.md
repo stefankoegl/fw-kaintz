@@ -76,3 +76,9 @@ Anfrage
 -------
 
 {% include anfrage.html %}
+
+
+Verfügbarkeit
+-------------
+
+{% include kalender.html %}
