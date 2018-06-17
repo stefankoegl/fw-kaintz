@@ -1,0 +1,1 @@
+Sie finden uns an der Adresse [Strandplatz 6, 7141 Podersdorf am See, Österreich](https://www.google.at/maps/place/Ferienwohnung+Kaintz/@47.8574812,16.8265431,17z/data=!3m1!4b1!4m8!3m7!1s0x476c6a154a823983:0xb0b3a9940ac64f85!5m2!1s2018-06-11!2i3!8m2!3d47.8574776!4d16.8287318)

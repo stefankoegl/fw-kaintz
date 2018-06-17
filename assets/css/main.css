@@ -6,6 +6,10 @@ html {
     color: #333;
 }
 
+header a {
+    text-decoration: none;
+}
+
 h1 {
     text-transform: uppercase;
     font-size: 3.2em !important;
@@ -55,51 +59,6 @@ fieldset {
 input, select, textarea, button {
     box-sizing: border-box;
     width: 100%;
-}
-
-#zimmer-und-preise:before,
-#ausstattung:before,
-#lage:before,
-#fotos:before,
-#anreise:before,
-#wetter:before,
-#anfrage:before,
-#verfügbarkeit:before {
-    font-family: 'Font Awesome\ 5 Free';
-    font-weight: 900;
-    padding-right: .3em;
-}
-
-#zimmer-und-preise:before {
-    content: "\f236";
-}
-
-#ausstattung:before {
-    content: "\f005";
-}
-
-#lage:before {
-    content: "\f041";
-}
-
-#fotos:before {
-    content: "\f030";
-}
-
-#anreise:before {
-    content: "\f1b9";
-}
-
-#wetter:before {
-    content: "\f185";
-}
-
-#anfrage:before {
-    content: "\f0e0";
-}
-
-#verfügbarkeit:before {
-    content: "\f073";
 }
 
 /* color: #FFC644; */

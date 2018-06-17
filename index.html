@@ -1,0 +1,64 @@
+---
+layout: home
+---
+
+<img src="/assets/img/obj_orig_85633_002.jpg">
+
+{% capture start %}{% include start.md %}{% endcapture %}
+{{ start | markdownify }}
+
+
+<h2><i class="fas fa-bed"></i> Zimmer und Preise</h2>
+
+{% capture zimmer_preise %}{% include zimmer-preise.md %}{% endcapture %}
+{{ zimmer_preise | markdownify }}
+
+
+<h2><i class="fas fa-star"></i> Ausstattung</h2>
+
+{% capture ausstattung %}{% include ausstattung.md %}{% endcapture %}
+{{ ausstattung | markdownify }}
+
+
+<h2><i class="fas fa-map-marker"></i> Lage</h2>
+
+{% capture lage %}{% include lage.md %}{% endcapture %}
+{{ lage | markdownify }}
+
+{% include karte.html %}
+
+
+<h2><i class="fas fa-camera"></i> Fotos</h2>
+
+{% assign image_files = site.static_files | where: "image", true %}
+{% for myimage in image_files | limit: 2 %}
+ <div style="height: 200px; width: 300px; display: inline-block;">
+   <img src="{{ myimage.path }}" style="max-width: 100%; max-height: 100%;">
+ </div>
+{% endfor %}
+
+<a href="/fotos.html">Mehr Fotos</a>
+
+
+<h2><i class="fas fa-car"></i> Anreise</h2>
+
+{% capture anreise %}{% include anreise.md %}{% endcapture %}
+{{ anreise | markdownify }}
+
+
+<h2><i class="fas fa-sun"></i> Wetter</h2>
+
+{% include wetter.html %}
+
+{% capture wetter %}{% include wetter.md %}{% endcapture %}
+{{ wetter | markdownify }}
+
+
+<h2><i class="fas fa-envelope"></i> Anfrage</h2>
+
+{% include anfrage.html %}
+
+
+<h2><i class="fas fa-calendar-alt"></i> Verfügbarkeit</h2>
+
+{% include kalender.html %}

@@ -1,11 +1,15 @@
 ---
 layout: default
 ---
-<h1>Fotos</h1>
+<h2>Fotos</h2>
 
-{% assign image_files = site.static_files | where: "image", true %}
-{% for myimage in image_files %}
- <div style="height: 200px; width: 300px; display: inline-block;">
-  <img src="{{ myimage.path }}" style="max-width: 100%; max-height: 100%;">
- </div>
-{% endfor %}
+<div class="gallery">
+ {% assign image_files = site.static_files | where: "image", true %}
+ {% for myimage in image_files %}
+  <div style="height: 200px; width: 300px; display: inline-block;">
+   <img src="{{ myimage.path }}" style="max-width: 100%; max-height: 100%;">
+  </div>
+ {% endfor %}
+</div>
+
+<a href="{{ site.url }}">Zurück</a>
