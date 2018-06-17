@@ -46,7 +46,7 @@ header, main, footer {
 }
 
 p {
-    padding: 0 .5em 0 .5em;
+    padding: 0 1em 0 1em;
 }
 
 ul {
@@ -55,6 +55,8 @@ ul {
 
 body {
     text-align: center;
+background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(/assets/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 iframe {
@@ -120,11 +122,11 @@ input, select, textarea, button {
 
 #wrapper {
     display: block;
-    max-width: 40em;
+    max-width: 45em;
     display: inline-block;
 
     background-color: white;
-    box-shadow: 0px 0px 5px 6px #ccc;
+/*    box-shadow: 0px 0px 5px 6px #ccc;*/
 }
 
 
