@@ -2,63 +2,72 @@
 layout: home
 ---
 
-<img src="/assets/img/obj_orig_85633_002.jpg">
+<img id="header" src="/assets/home.jpg">
 
 {% capture start %}{% include start.md %}{% endcapture %}
 {{ start | markdownify }}
 
 
-<h2><i class="fas fa-bed"></i> Zimmer und Preise</h2>
+<h2 id="zimmer-preise"><i class="fas fa-bed"></i> Zimmer und Preise</h2>
 
 {% capture zimmer_preise %}{% include zimmer-preise.md %}{% endcapture %}
 {{ zimmer_preise | markdownify }}
 
+<hr>
 
-<h2><i class="fas fa-star"></i> Ausstattung</h2>
+<h2 id="ausstattung"><i class="fas fa-star"></i> Ausstattung</h2>
 
 {% capture ausstattung %}{% include ausstattung.md %}{% endcapture %}
 {{ ausstattung | markdownify }}
 
+<hr>
 
-<h2><i class="fas fa-map-marker"></i> Lage</h2>
+<h2 id="lage"><i class="fas fa-map-marker"></i> Lage</h2>
 
 {% capture lage %}{% include lage.md %}{% endcapture %}
 {{ lage | markdownify }}
 
 {% include karte.html %}
 
+<hr>
 
-<h2><i class="fas fa-camera"></i> Fotos</h2>
+<h2 id="fotos"><i class="fas fa-camera"></i> Fotos</h2>
 
-{% assign image_files = site.static_files | where: "image", true %}
-{% for myimage in image_files | limit: 2 %}
- <div style="height: 200px; width: 300px; display: inline-block;">
-   <img src="{{ myimage.path }}" style="max-width: 100%; max-height: 100%;">
- </div>
-{% endfor %}
+<div class="gallery">
+ {% assign image_files = site.static_files | where: "image", true %}
+ {% for myimage in image_files | limit: 2 %}
+  <div>
+   <img src="{{ myimage.path }}">
+  </div>
+ {% endfor %}
+</div>
 
 <a href="/fotos.html">Mehr Fotos</a>
 
+<hr>
 
-<h2><i class="fas fa-car"></i> Anreise</h2>
+<h2 id="anreise"><i class="fas fa-car"></i> Anreise</h2>
 
 {% capture anreise %}{% include anreise.md %}{% endcapture %}
 {{ anreise | markdownify }}
 
+<hr>
 
-<h2><i class="fas fa-sun"></i> Wetter</h2>
+<h2 id="wetter"><i class="fas fa-sun"></i> Aktuelles Wetter</h2>
 
 {% include wetter.html %}
 
 {% capture wetter %}{% include wetter.md %}{% endcapture %}
 {{ wetter | markdownify }}
 
+<hr>
 
-<h2><i class="fas fa-envelope"></i> Anfrage</h2>
+<h2 id="anfrage"><i class="fas fa-envelope"></i> Anfrage</h2>
 
 {% include anfrage.html %}
 
+<hr>
 
-<h2><i class="fas fa-calendar-alt"></i> Verfügbarkeit</h2>
+<h2 id="verfuegbarkeit"><i class="fas fa-calendar-alt"></i> Verfügbarkeit</h2>
 
 {% include kalender.html %}
