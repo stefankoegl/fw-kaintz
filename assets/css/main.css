@@ -20,9 +20,6 @@ h1, h2, h3 {
 }
 
 header, main, footer {
-    display: block;
-    max-width: 40em;
-    display: inline-block;
 }
 
 ul {
@@ -101,3 +98,12 @@ input, select, textarea, button {
 }
 
 /* color: #FFC644; */
+
+#wrapper {
+    display: block;
+    max-width: 40em;
+    display: inline-block;
+
+    background-color: white;
+    box-shadow: 0px 0px 5px 6px #ccc;
+}
