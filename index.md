@@ -34,7 +34,7 @@ Die Komfortausstattung beinhaltet
 * komplette Küche mit Geschirrspüler, E-Herd, Micro, Kaffeemaschine, Kühlschrank, etc
 * W-LAN
 * 20m² Terrasse
-* Bücher und Gesell.-spiele
+* Bücher und Gesellschafts-Spiele
 * Radio mit CD-Player
 * Heizstrahler und Fön in jedem Duschraum
 * Zentralheizung im Wohnungspreis enthalten
