@@ -60,6 +60,7 @@ input, select, textarea, button {
 #zimmer-und-preise:before,
 #ausstattung:before,
 #lage:before,
+#fotos:before,
 #anreise:before,
 #wetter:before,
 #anfrage:before,
@@ -79,6 +80,10 @@ input, select, textarea, button {
 
 #lage:before {
     content: "\f041";
+}
+
+#fotos:before {
+    content: "\f030";
 }
 
 #anreise:before {

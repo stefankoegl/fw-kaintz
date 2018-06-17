@@ -57,6 +57,11 @@ Sie finden uns an der Adresse [Strandplatz 6, 7141 Podersdorf am See, Österreic
 
 {% include karte.html %}
 
+### Fotos
+
+[Fotos](fotos.html)
+
+
 ### Anreise
 
 * Frühester Check-in: 14:00
