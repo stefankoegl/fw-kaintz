@@ -90,14 +90,18 @@ table td {
     }
 
 	table td:nth-of-type(2):after {
+        content: "Größe: ";
+    }
+
+	table td:nth-of-type(3):after {
 		content: " Personen";
     }
 
-    table td:nth-of-type(3):before {
+    table td:nth-of-type(4):before {
         content: "Hauptsaison: ";
     }
 
-    table td:nth-of-type(4):before {
+    table td:nth-of-type(5):before {
         content: "Nebensaison: ";
     }
 }
