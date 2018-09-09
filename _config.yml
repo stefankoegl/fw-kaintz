@@ -1,6 +1,6 @@
 ---
 title: Ferienwohnung Kaintz
-timezone: UTC
+timezone: Europe/Vienna
 collections:
   posts:
     title: Posts
@@ -13,7 +13,7 @@ defaults:
     path: assets/img
   values:
     image: true
-email: your-email@example.com
+email: stefan@skoegl.net
 description: Ferienwohnung in Podersdorf
 baseurl: "/"
 url: https://www.ferienwohnung-kaintz.at
