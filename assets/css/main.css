@@ -167,3 +167,15 @@ nav ul li:after {
 nav ul li:last-child:after {
     content: "";
 }
+
+#podersdorf {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+#podersdorf img {
+    height: 100px;
+    width: auto;
+    padding: 10px;
+}
