@@ -2,6 +2,7 @@ Die Ferienwohnung besteht aus zwei Schlafzimmern, die getrennt begehbar sind.
 Sie können die Wohnung mit einem oder mit beiden Zimmern buchen.
 
 | Zimmer                      | Ganze Wohnung | Verkleinerte Wohnung |
+| :-------------------------- | ------------: | -------------------: |
 | Größe                       |         64 m² |                44 m² |
 | Personen                    |         max 5 |                max 3 |
 | Hauptsaison (min  4 Nächte) |         € 125 |                € 125 |
