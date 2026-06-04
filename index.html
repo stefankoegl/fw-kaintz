@@ -37,7 +37,7 @@ layout: home
  {% assign image_files = site.static_files | where: "image", true %}
  {% for myimage in image_files | limit: 3 %}
   <div>
-   <img src="{{ myimage.path }}">
+   <img src="{{ myimage.path }}" loading="lazy">
   </div>
  {% endfor %}
 </div>
