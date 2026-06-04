@@ -126,7 +126,6 @@ input, select, textarea, button {
 /* color: #FFC644; */
 
 #wrapper {
-    display: block;
     max-width: 45em;
     display: inline-block;
 
