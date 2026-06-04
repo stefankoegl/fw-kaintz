@@ -8,7 +8,7 @@ layout: default
  {% assign image_files = site.static_files | where: "image", true %}
  {% for myimage in image_files %}
   <div>
-   <img src="{{ myimage.path }}">
+   <img src="{{ myimage.path }}" loading="lazy">
   </div>
  {% endfor %}
 </div>
