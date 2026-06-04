@@ -1,13 +1,6 @@
 ---
 title: Ferienwohnung Kaintz
 timezone: Europe/Vienna
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
 defaults:
 - scope:
     path: assets/img
