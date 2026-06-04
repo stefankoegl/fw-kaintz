@@ -8,7 +8,7 @@ defaults:
     image: true
 email: stefan@skoegl.net
 description: Ferienwohnung in Podersdorf
-baseurl: "/"
+baseurl: ""
 url: https://www.ferienwohnung-kaintz.at
 lang: de
 markdown: kramdown
