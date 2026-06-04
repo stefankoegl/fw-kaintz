@@ -18,7 +18,6 @@ description: Ferienwohnung in Podersdorf
 baseurl: "/"
 url: https://www.ferienwohnung-kaintz.at
 lang: de
-google_analytics: UA-107321-12
 markdown: kramdown
 theme: minima
 plugins:
