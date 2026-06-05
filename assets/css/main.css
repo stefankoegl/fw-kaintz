@@ -80,30 +80,34 @@ table td {
     table th {
         display: none;
     }
-    table td {
-        display: block;
-        width: 100%;
+    table tr {
+        display: flex;
+        flex-wrap: wrap;
     }
-
+    table td {
+        box-sizing: border-box;
+    }
     table td:first-child {
+        width: 100%;
         margin-top: .5em;
         font-weight: bold;
+        text-align: left;
     }
-
-	table td:nth-of-type(2):after {
-        content: "Größe: ";
+    table td:nth-child(2),
+    table td:nth-child(3) {
+        width: 50%;
     }
-
-	table td:nth-of-type(3):after {
-		content: " Personen";
+    table td:nth-child(2):before {
+        display: block;
+        content: "Ganze Wohnung";
+        font-size: 0.8em;
+        font-style: italic;
     }
-
-    table td:nth-of-type(4):before {
-        content: "Hauptsaison: ";
-    }
-
-    table td:nth-of-type(5):before {
-        content: "Nebensaison: ";
+    table td:nth-child(3):before {
+        display: block;
+        content: "Verkleinerte Wohnung";
+        font-size: 0.8em;
+        font-style: italic;
     }
 }
 
