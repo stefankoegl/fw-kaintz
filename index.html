@@ -1,80 +1,510 @@
----
-layout: default
----
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ferienwohnung Kaintz | Ferienwohnung in Podersdorf</title>
+<meta name="description" content="Ferienwohnung Kaintz in Podersdorf am See: Appartement mit 4 Sonnen, zwei Schlafzimmern und Platz für bis zu 4 Personen. Fotos, Preise und Anfrage.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_AT">
+<meta property="og:title" content="Ferienwohnung Kaintz | Ferienwohnung in Podersdorf am See">
+<meta property="og:description" content="Appartement mit 4 Sonnen, zwei Schlafzimmern und Platz für bis zu 4 Personen. Fotos, Preise und Anfrage.">
+<meta property="og:url" content="https://www.ferienwohnung-kaintz.at/">
+<meta property="og:image" content="https://www.ferienwohnung-kaintz.at/img/haus-seite.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/inter-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+body{margin:0}
+.kw{font-family:'Inter',-apple-system,system-ui,'Helvetica Neue',sans-serif;color:#222222;background:#ffffff;width:100%}
+.kw{overflow-x:clip}
+.kw *{box-sizing:border-box}
+.kw :focus-visible{outline:2px solid #222222;outline-offset:2px}
+.kw h1,.kw h2,.kw h3,.kw p,.kw ul{margin:0}
+.kw ul{padding:0;list-style:none}
+.wrap{max-width:1440px;margin:0 auto;padding:0 16px}
+.lnk{color:#2A6B87}
+.lnk:hover{color:#1F5670}
+.btn-p{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 24px;border:0;border-radius:8px;background:#2A6B87;color:#ffffff;font-family:inherit;font-size:16px;font-weight:500;line-height:1.25;text-decoration:none;cursor:pointer}
+.btn-p:hover,.btn-p:active{background:#1F5670;color:#ffffff}
+.btn-s{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 23px;border:1px solid #222222;border-radius:8px;background:#ffffff;color:#222222;font-family:inherit;font-size:16px;font-weight:500;line-height:1.25;text-decoration:none;cursor:pointer}
+.hdr{position:sticky;top:0;z-index:50;background:#ffffff;border-bottom:1px solid #dddddd}
+.hdr-in{height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;color:#222222;text-decoration:none;font-size:16px;font-weight:700;line-height:1.25}
+.nav{display:none;gap:20px}
+.nav a{padding:12px 0;color:#222222;text-decoration:none;font-size:16px;font-weight:600;line-height:1.25}
+.nav a:hover{color:#2A6B87}
+.burger{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #dddddd;border-radius:9999px;background:#ffffff;cursor:pointer}
+.mnav a{display:block;padding:14px 0;border-top:1px solid #ebebeb;color:#222222;text-decoration:none;font-size:16px;font-weight:600;line-height:1.25}
+.hero{position:relative;margin-top:16px}
+.hero-photo{height:340px;border-radius:20px;overflow:hidden;background:#f2f2f2;position:relative}
+.hero-card{position:relative;margin:-56px 16px 0;padding:24px;border-radius:14px;background:#ffffff;box-shadow:rgba(0,0,0,0.02) 0 0 0 1px,rgba(0,0,0,0.04) 0 2px 6px 0,rgba(0,0,0,0.1) 0 4px 8px 0;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.ph{position:relative;display:flex;align-items:center;justify-content:center;background:#f2f2f2;color:#6a6a6a;font-size:13px;line-height:1.23;text-align:center;padding:8px}
+.car{position:relative;border-radius:14px;overflow:hidden;background:#f2f2f2;aspect-ratio:4/3;width:100%}
+.car-track{display:flex;height:100%;width:100%}
+.car-slide{flex:0 0 100%;height:100%;min-width:0}
+.car-play{position:absolute;left:16px;top:16px;z-index:4;width:36px;height:36px;border:0;border-radius:9999px;background:#ffffff;box-shadow:rgba(0,0,0,0.02) 0 0 0 1px,rgba(0,0,0,0.04) 0 2px 6px 0,rgba(0,0,0,0.1) 0 4px 8px 0;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.car-prog{position:absolute;left:0;right:0;bottom:0;height:3px;z-index:3;background:#EE8A3C;transform:scaleX(0);transform-origin:0 50%;pointer-events:none}
+.h2bar{display:block;width:32px;height:3px;border-radius:3px;background:#EE8A3C;margin-bottom:10px}
+.ic{flex:0 0 auto;width:40px;height:40px;border-radius:12px;background:#E3EFF4;display:flex;align-items:center;justify-content:center}
+.ic.muted{background:#f0f0f0}
+.amen li span:last-child{align-self:center}
+.wave{position:relative;height:56px;margin-top:48px;overflow:hidden;line-height:0}
+.wave svg{position:absolute;left:0;bottom:0;width:200%;height:100%}
+.wave-a{opacity:1;bottom:6px}
+.card-r{border-top:3px solid #EE8A3C}
+.scrollbar{position:fixed;left:0;top:0;right:0;height:3px;z-index:60;background:#EE8A3C;transform:scaleX(0);transform-origin:0 50%;pointer-events:none}
+.ch{display:inline-block}
+.wm{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:0.12em}
+.wm>span{display:inline-block}
+.host{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;align-items:center}
+.host img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;background:#f2f2f2}
+.why{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.why>div{background:#F3F8FA;border:1px solid #D9E8EE;border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.why-price{border-top:3px solid #EE8A3C!important}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.chip{padding:8px 14px;border-radius:9999px;background:#E3EFF4;color:#1F5670;font-size:14px;font-weight:500;line-height:1.29}
+@media (min-width:744px){.host{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:32px}.why{grid-template-columns:repeat(2,minmax(0,1fr))}.why-price,.why-sport{grid-column:1/-1}}
+.car-ov{position:absolute;left:0;top:0;right:0;bottom:0;z-index:2;cursor:grab;touch-action:pan-y}
+.car-arrow{display:none;position:absolute;top:50%;margin-top:-22px;z-index:4;width:44px;height:44px;border:0;border-radius:9999px;background:#ffffff;box-shadow:rgba(0,0,0,0.02) 0 0 0 1px,rgba(0,0,0,0.04) 0 2px 6px 0,rgba(0,0,0,0.1) 0 4px 8px 0;cursor:pointer;align-items:center;justify-content:center}
+.car-dots{position:absolute;left:0;right:0;bottom:8px;z-index:3;display:flex;flex-wrap:wrap;justify-content:center;gap:0 2px;padding:0 16px}
+.car-dot{display:flex;align-items:center;justify-content:center;width:14px;height:24px;border:0;padding:0;background:transparent;cursor:pointer}
+.layout{display:grid;grid-template-columns:minmax(0,1fr);gap:64px;margin-top:64px}
+.main{display:flex;flex-direction:column;gap:64px;min-width:0}
+.rail{min-width:0}
+.card-r{background:#ffffff;border:1px solid #dddddd;border-radius:14px;padding:24px;box-shadow:rgba(0,0,0,0.02) 0 0 0 1px,rgba(0,0,0,0.04) 0 2px 6px 0,rgba(0,0,0,0.1) 0 4px 8px 0}
+.fld{display:flex;flex-direction:column;gap:8px}
+.inp{width:100%;height:56px;padding:12px 14px;border:1px solid #dddddd;border-radius:8px;background:#ffffff;color:#222222;font-family:inherit;font-size:16px;line-height:1.5}
+.inp:focus{border:2px solid #222222;padding:11px 13px;outline:none}
+.num{width:72px;height:44px;padding:8px 12px;border:1px solid #dddddd;border-radius:8px;background:#ffffff;color:#222222;font-family:inherit;font-size:16px;line-height:1.5}
+.num:focus{border:2px solid #222222;padding:7px 11px;outline:none}
+.rad{display:flex;align-items:center;gap:8px;min-height:44px;font-size:14px;line-height:1.43;color:#3f3f3f}
+.rad input{width:18px;height:18px;margin:0;accent-color:#2A6B87;flex:0 0 auto}
+.amen{columns:1;column-gap:48px}
+.amen li{break-inside:avoid;display:flex;align-items:flex-start;gap:14px;padding:10px 0;font-size:16px;line-height:1.5;color:#3f3f3f}
+.vars{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.pair{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.pair img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;background:#f2f2f2}
+.see{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.logos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.emb-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:24px;border:1px solid #dddddd;border-radius:14px;background:#f7f7f7;text-align:center}
+.emb-ph[hidden]{display:none}
+.tblbox{overflow-x:auto;border:1px solid #dddddd;border-radius:14px}
+.tbl{width:100%;min-width:520px;border-collapse:collapse}
+.tbl th,.tbl td{padding:16px;text-align:left;border-bottom:1px solid #ebebeb;font-size:14px;line-height:1.43;vertical-align:top}
+.tbl tr:last-child td{border-bottom:0}
+.tbl th{font-weight:600;color:#1F5670;background:#EAF3F7}
+.times{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.foot{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+.foot a{color:#222222;text-decoration:none;font-size:14px;line-height:1.43}
+.bar{position:sticky;bottom:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px;background:#ffffff;border-top:1px solid #dddddd}
+@media (min-width:744px){
+.wrap{padding:0 40px}
+.hero-photo{height:520px}
+.hero-card{position:absolute;left:32px;bottom:32px;margin:0;width:440px}
+.car{aspect-ratio:16/9;max-height:640px}
+.car-arrow{display:flex}
+.amen{columns:2}
+.vars{grid-template-columns:repeat(2,minmax(0,1fr))}
+.pair{grid-template-columns:repeat(2,minmax(0,1fr))}
+.logos{grid-template-columns:repeat(4,minmax(0,1fr))}
+.times{grid-template-columns:repeat(2,minmax(0,1fr))}
+.foot{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+}
+@media (min-width:1128px){
+.hdr-in{height:80px}
+.nav{display:flex}
+.burger{display:none}
+.hero-photo{height:600px}
+.layout{grid-template-columns:minmax(0,1fr) 372px;align-items:start}
+.rail{position:sticky;top:96px}
+.scrollbox{max-height:calc(100vh - 260px);overflow-y:auto;padding:4px}
+.bar{display:none}
+}
+@media (min-width:1440px){
+.wrap{padding:0 80px}
+}
 
-<img id="header" src="/assets/home.jpg">
+@media (min-width:1128px){.mnav{display:none!important}}
+.mnav[hidden]{display:none}
+</style>
+</head>
+<body>
+<div class="kw">
 
-{% capture start %}{% include start.md %}{% endcapture %}
-{{ start | markdownify }}
+<header class="hdr">
+<div class="wrap">
+<div class="hdr-in">
+<a class="brand" href="#top"><img src="img/logo.svg" alt="" width="48" height="30" style="display:block">Ferienwohnung Kaintz</a>
+<nav class="nav" aria-label="Hauptnavigation">
+<a href="#fotos">Fotos</a>
+<a href="#warum">Warum zu uns</a>
+<a href="#ausstattung">Ausstattung</a>
+<a href="#lage">Lage</a>
+<a href="#zimmer-preise">Zimmer und Preise</a>
+<a href="#anfrage">Anfrage</a>
+<a href="#verfuegbarkeit">Verfügbarkeit</a>
+<a href="#anreise">Anreise</a>
+</nav>
+<button type="button" class="burger" id="burger" aria-label="Menü" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg></button>
+</div>
+<nav class="mnav" id="mnav" hidden aria-label="Mobile Navigation" style="padding-bottom: 8px">
+<a href="#fotos">Fotos</a>
+<a href="#warum">Warum zu uns</a>
+<a href="#ausstattung">Ausstattung</a>
+<a href="#lage">Lage</a>
+<a href="#zimmer-preise">Zimmer und Preise</a>
+<a href="#anfrage">Anfrage</a>
+<a href="#verfuegbarkeit">Verfügbarkeit</a>
+<a href="#anreise">Anreise</a>
+</nav>
+</div>
+</header>
 
+<main id="top">
 
-<h2 id="zimmer-preise"><i class="fas fa-bed"></i> Wohnungsvarianten und Preise für 2026</h2>
+<!-- 1 Hero -->
+<section class="wrap" aria-label="Willkommen">
+<div class="hero">
+<div class="hero-photo kw-hero-photo">
+<img src="img/haus-seite.jpg" alt="Außenansicht des Hauses mit Herbstlaub und Blumenkästen" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:center 45%;display:block">
+</div>
+<div class="hero-card kw-hero-card">
+<div style="display:flex;gap:4px" aria-hidden="true">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EE8A3C" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EE8A3C" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EE8A3C" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EE8A3C" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+</div>
+<h1 style="font-size:28px;font-weight:700;line-height:1.43;color:#222222">Ferienwohnung Kaintz</h1>
+<p style="font-size:16px;font-weight:400;line-height:1.5;color:#3f3f3f">Podersdorf am See</p>
+<a class="btn-p" href="#anfrage">Jetzt anfragen</a>
+</div>
+</div>
+</section>
 
-{% capture zimmer_preise %}{% include zimmer-preise.md %}{% endcapture %}
-{{ zimmer_preise | markdownify }}
+<!-- 2 Fotos -->
+<section id="fotos" class="wrap" style="margin-top:64px;scroll-margin-top:96px" aria-label="Fotos">
+<div style="display:flex;flex-direction:column;gap:24px" data-fade>
+<h2 style="font-size:21px;font-weight:700;line-height:1.43;color:#222222">Fotos</h2>
+<div class="car" role="group" aria-roledescription="Karussell" aria-label="Fotos der Ferienwohnung">
+<div class="car-track" id="kw-track">
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/haus-front.jpg" alt="Außenansicht des Hauses mit Eingangstor" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/haus-seite.jpg" alt="Seitenansicht des Hauses mit Blumenkästen und Herbstlaub" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/zimmer-bett.jpg" alt="Schlafzimmer mit Doppelbett, Sessel und blauem Sofa" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/zimmer-bild.jpg" alt="Schlafzimmer mit Doppelbett und Fenster" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/sitzecke.jpg" alt="Sitzecke mit blauem Sofa, Sesseln und Tisch" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/kueche-eck.jpg" alt="Küche mit Geschirrspüler, Herd und Mikrowelle" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/kueche-zeile.jpg" alt="Küchenzeile mit Herd, Backofen und Spüle" draggable="false" style="display:block;width:100%;height:100%;object-fit:contain" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/bad-waschtisch.jpg" alt="Bad mit Waschtisch, Spiegel und Handtuchheizkörper" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/bad-spiegel.jpg" alt="Waschtisch mit beleuchtetem Spiegel" draggable="false" style="display:block;width:100%;height:100%;object-fit:contain" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/bad-dusche.jpg" alt="Dusche, WC und Handtuchheizkörper" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/wohnungsplan.jpg" alt="Wohnungsplan mit Schlafzimmern, Küche, Bädern und Terrasse" draggable="false" style="display:block;width:100%;height:100%;object-fit:contain" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/tuer.jpg" alt="Eingangstür mit gelben Blumen" draggable="false" style="display:block;width:100%;height:100%;object-fit:contain" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/terrasse.jpg" alt="Terrasse mit Tisch, Stühlen und rotem Sonnenschirm" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/garten-panorama.jpg" alt="Garten mit Birken und Blick auf das Haus" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/garten-wiese.jpg" alt="Wiese und Blumenbeet im Garten" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/garten-birken.jpg" alt="Garten mit Birken und Rosen" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/haus-hagebutten.jpg" alt="Haus im Garten mit Hagebutten im Vordergrund" draggable="false" style="display:block;width:100%;height:100%;object-fit:contain" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/gastgeber.jpg" alt="Die Gastgeber bei einem Kaffee im Herbst" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+</div>
+<div class="car-ov" id="car-ov"></div>
+<button type="button" class="car-arrow" id="car-prev" data-prev style="left:16px" aria-label="Vorheriges Foto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+<button type="button" class="car-arrow" id="car-next" data-next style="right:16px" aria-label="Nächstes Foto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+<div style="position:absolute;top:16px;right:16px;z-index:3;padding:5px 10px;border-radius:9999px;background:#ffffff;font-size:11px;font-weight:600;line-height:1.18;pointer-events:none"><span id="car-count" data-count>1 / 18</span></div>
+<button type="button" class="car-play" id="car-play" aria-label="Slideshow pausieren"><svg width="16" height="16" viewBox="0 0 24 24" fill="#222222" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#222222" aria-hidden="true" style="display:none"><path d="M8 5.5v13a1 1 0 001.5.86l10.5-6.5a1 1 0 000-1.72L9.5 4.64A1 1 0 008 5.5z"/></svg></button>
+<div class="car-prog" id="car-prog"></div>
+<div class="car-dots" id="car-dots"></div>
+</div>
+</div>
+</section>
 
-<hr>
+<!-- 3-5 Inhalt + Anfrage-Rail -->
+<div class="wrap">
+<div class="layout">
 
-<h2 id="ausstattung"><i class="fas fa-star"></i> Ausstattung</h2>
+<div class="main">
 
-{% capture ausstattung %}{% include ausstattung.md %}{% endcapture %}
-{{ ausstattung | markdownify }}
+<section id="wohnung" style="scroll-margin-top:96px" aria-label="Die Wohnung">
+<div style="display:flex;flex-direction:column;gap:16px" data-fade>
+<h2 style="font-size:22px;font-weight:500;line-height:1.18;letter-spacing:-0.44px;color:#222222">Willkommen in der Ferienwohnung Kaintz in Podersdorf am See!</h2>
+<p style="font-size:16px;font-weight:400;line-height:1.5;color:#3f3f3f">Das Appartement wurde mit 4 Sonnen kategorisiert.</p>
+<p style="font-size:16px;font-weight:400;line-height:1.5;color:#3f3f3f">Die Ferienwohnung besteht aus zwei Schlafzimmern, die getrennt begehbar sind.</p>
+<div class="vars" style="margin-top:8px">
+<div style="background:#F3F8FA;border:1px solid #D9E8EE;border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:8px">
+<div style="font-size:16px;font-weight:600;line-height:1.25">Ganze Wohnung</div>
+<div style="font-size:14px;font-weight:400;line-height:1.43;color:#3f3f3f">64 m² · max. 4 Personen</div>
+</div>
+<div style="background:#F3F8FA;border:1px solid #D9E8EE;border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:8px">
+<div style="font-size:16px;font-weight:600;line-height:1.25">Verkleinerte Wohnung</div>
+<div style="font-size:14px;font-weight:400;line-height:1.43;color:#3f3f3f">44 m² · max. 2 Personen · nur 1 Wohnschlafzimmer · nur in der Nebensaison</div>
+</div>
+</div>
+<div class="pair" style="margin-top:8px"><img src="img/zimmer-bild.jpg" alt="Schlafzimmer mit Doppelbett und Fenster" loading="lazy"><img src="img/sitzecke.jpg" alt="Sitzecke mit blauem Sofa, Sesseln und Tisch" loading="lazy"></div>
+</div>
+</section>
 
-<hr>
+<section id="warum" style="scroll-margin-top:96px" aria-label="Warum zu uns">
+<div style="display:flex;flex-direction:column;gap:24px" data-fade>
+<h2 style="font-size:21px;font-weight:700;line-height:1.43;color:#222222">Warum zu uns?</h2>
+<div class="host">
+<figure style="margin:0;display:flex;flex-direction:column;gap:8px"><img src="img/gastgeber-bank.webp" alt="Die Gastgeber Josef und Andrea auf einer Gartenbank" loading="lazy" style="object-position:35% 40%"><figcaption style="font-size:14px;line-height:1.43;color:#6a6a6a">Josef und Andrea, Ihre Gastgeber</figcaption></figure>
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:22px;font-weight:500;line-height:1.18;letter-spacing:-0.44px;color:#222222">Wir freuen uns, Sie in unserer Ferienwohnung in Podersdorf am See zu begrüßen.</p>
+<p style="font-size:16px;font-weight:400;line-height:1.5;color:#3f3f3f">Unser Ziel ist einfach: ein Urlaub am Neusiedler See, der leistbar bleibt – mit fairen Preisen, kurzen Wegen zum Strand und allem, was Sie für erholsame Tage brauchen.</p>
+</div>
+</div>
+<div class="why">
+<div class="why-price">
+<div style="display:flex;align-items:center;gap:12px"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#EE8A3C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5a4 4 0 100 7M7 11h6M7 13.5h6"/></svg></span><h3 style="font-size:20px;font-weight:600;line-height:1.2;letter-spacing:-0.18px;color:#222222">Faire Preise, damit Urlaub leistbar bleibt</h3></div>
+<p style="font-size:16px;font-weight:400;line-height:1.5;color:#3f3f3f">Wir wollen, dass sich Familien und Freunde einen Urlaub am See leisten können. Deshalb sind unsere Preise bewusst fair: Die ganze Wohnung für bis zu 4 Personen kostet ab</p>
+<div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px"><span style="font-size:36px;font-weight:700;line-height:1.1;letter-spacing:-0.5px;color:#1F5670">€ 130</span><span style="font-size:18px;font-weight:600;line-height:1.2;color:#222222">pro Nacht</span></div>
+<p style="font-size:16px;font-weight:400;line-height:1.5;color:#3f3f3f">Inklusive Strom, Endreinigung, Heizung, Steuer und BurgenlandCard. Die Ortstaxe (€ 4,50 pro Person ab 18 Jahren und Nacht) kommt noch dazu.</p>
+<p style="font-size:14px;line-height:1.43;color:#6a6a6a">Alle Preise finden Sie unter <a class="lnk" href="#zimmer-preise">Zimmer und Preise</a>.</p>
+</div>
+<div>
+<div style="display:flex;align-items:center;gap:12px"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0118 0z"/><path d="M12 12v8M9 20h6"/></svg></span><h3 style="font-size:20px;font-weight:600;line-height:1.2;letter-spacing:-0.18px;color:#222222">Direkt am Südstrand</h3></div>
+<p style="font-size:16px;font-weight:400;line-height:1.5;color:#3f3f3f">Zum Südstrand sind es zu Fuß nur ein bis zwei Minuten, wir sind praktisch direkt am Wasser. Auch der Nordstrand ist ganz in der Nähe: Zum nächsten Eingang gehen Sie zu Fuß fünf bis sechs Minuten. Zum Bereich mit Bondi Beach, Kitestrand und dem Startplatz der Windsurfer sind es rund ein Kilometer, das sind etwa zehn bis 15 Minuten zu Fuß.</p>
+</div>
+<div>
+<div style="display:flex;align-items:center;gap:12px"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 002 2v9M5 3v5M9 3v5M17 3c-2.2 1.6-3 4.5-3 7h3v11"/></svg></span><h3 style="font-size:20px;font-weight:600;line-height:1.2;letter-spacing:-0.18px;color:#222222">Einkehren in Podersdorf</h3></div>
+<p style="font-size:16px;font-weight:400;line-height:1.5;color:#3f3f3f">In Podersdorf gibt es viele Lokale, in denen Sie nach einem Tag am See gemütlich einkehren können.</p>
+</div>
+<div class="why-sport">
+<div style="display:flex;align-items:center;gap:12px"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="16" r="3.5"/><circle cx="18" cy="16" r="3.5"/><path d="M6 16l4-8h5l3 8M10 8H8"/></svg></span><h3 style="font-size:20px;font-weight:600;line-height:1.2;letter-spacing:-0.18px;color:#222222">Sport und Bewegung</h3></div>
+<p style="font-size:16px;font-weight:400;line-height:1.5;color:#3f3f3f">Rund um Podersdorf kommen Sportbegeisterte auf ihre Kosten:</p>
+<ul class="chips"><li class="chip">Radfahren</li><li class="chip">Wassersport</li><li class="chip">Podo Play</li><li class="chip">Beachvolleyball</li><li class="chip">Tennishalle Podersdorf</li><li class="chip">Tischtennis am See</li></ul>
+</div>
+</div>
+</div>
+</section>
 
-<h2 id="lage"><i class="fas fa-map-marker"></i> Lage</h2>
+<section id="abend" style="scroll-margin-top:96px" aria-label="Podersdorf im Abendlicht">
+<div style="display:flex;flex-direction:column;gap:24px" data-fade>
+<h2 style="font-size:21px;font-weight:700;line-height:1.43;color:#222222">Podersdorf im Abendlicht</h2>
+<p style="font-size:16px;font-weight:400;line-height:1.5;color:#3f3f3f">Wenn die Sonne über dem Neusiedler See untergeht, lohnt sich ein Abendspaziergang. Zum Südstrand sind es von uns nur wenige Gehminuten.</p>
+<div class="car" role="group" aria-roledescription="Karussell" aria-label="Bilder von Podersdorf im Abendlicht" data-delay="3">
+<div class="car-track">
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/abend-hafen-leuchtturm.jpg" alt="Sonnenuntergang am Hafen von Podersdorf mit Leuchtturm und Segelbooten" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover;object-position:center 58%"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/abend-nordstrand.jpg" alt="Sonnenuntergang am Nordstrand von Podersdorf mit Spiegelung im See" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+<div class="car-slide" style="background:#f2f2f2;overflow:hidden"><img src="img/abend-blaue-stunde.jpg" alt="Blaue Stunde am Neusiedler See nach Sonnenuntergang" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+</div>
+<div class="car-ov"></div>
+<button type="button" class="car-arrow" data-prev style="left:16px" aria-label="Vorheriges Foto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+<button type="button" class="car-arrow" data-next style="right:16px" aria-label="Nächstes Foto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+<div style="position:absolute;top:16px;right:16px;z-index:3;padding:5px 10px;border-radius:9999px;background:#ffffff;font-size:11px;font-weight:600;line-height:1.18;pointer-events:none"><span data-count>1 / 3</span></div>
+<button type="button" class="car-play" aria-label="Slideshow pausieren"><svg width="16" height="16" viewBox="0 0 24 24" fill="#222222" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#222222" aria-hidden="true" style="display:none"><path d="M8 5.5v13a1 1 0 001.5.86l10.5-6.5a1 1 0 000-1.72L9.5 4.64A1 1 0 008 5.5z"/></svg></button>
+<div class="car-prog"></div>
+<div class="car-dots"></div>
+</div>
+</div>
+</section>
 
-{% capture lage %}{% include lage.md %}{% endcapture %}
-{{ lage | markdownify }}
+<section id="ausstattung" style="scroll-margin-top:96px" aria-label="Ausstattung">
+<div style="display:flex;flex-direction:column;gap:16px" data-fade>
+<h2 style="font-size:21px;font-weight:700;line-height:1.43;color:#222222">Ausstattung</h2>
+<div class="pair"><img src="img/kueche-eck.jpg" alt="Küche mit Geschirrspüler, Herd und Mikrowelle" loading="lazy"><img src="img/terrasse.jpg" alt="Terrasse mit Tisch, Stühlen und rotem Sonnenschirm" loading="lazy"></div>
+<div style="border:1px solid #D9E8EE;background:#F6FAFC;border-radius:20px;padding:12px 24px">
+<ul class="amen">
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1 3.5 4.5 5 4.5 9.5a4.5 4.5 0 01-9 0c0-2 1-3.2 2-4.5 .3 1.6 1 2.3 1.8 2.5C11.3 8.3 11.2 5.5 12 3z"/></svg></span><span>Heizung</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><span>Kabel-TV</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="8" rx="1.5"/><path d="M7 9v8M11 9v8M15 9v8M19 9v8M3 17v3M21 17v3"/></svg></span><span>Gitterbett und Hochsessel</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 002 2v9M5 3v5M9 3v5M17 3c-2.2 1.6-3 4.5-3 7h3v11"/></svg></span><span>komplette Küche mit Geschirrspüler, E-Herd, Micro, Kaffeemaschine, Kühlschrank, etc</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9a14 14 0 0119 0M5.5 12.5a9.5 9.5 0 0113 0M8.7 16a5 5 0 016.6 0"/><circle cx="12" cy="19.2" r="1"/></svg></span><span>W-LAN</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0118 0z"/><path d="M12 12v8M9 20h6"/></svg></span><span>20m² Terrasse</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h12a2 2 0 012 2v13H7a2 2 0 00-2 2z"/><path d="M5 4v17M9 8h6"/></svg></span><span>Bücher und Gesellschafts-Spiele</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"/><circle cx="9" cy="14" r="3"/><path d="M15 12h3M15 16h3M6 8l11-4"/></svg></span><span>Radio mit CD-Player</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h10a4 4 0 010 8H4z"/><path d="M8 16l-1 5h3l1-5M19 10h2M19 14h2"/></svg></span><span>Heizstrahler und Fön in jedem Duschraum</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1 3.5 4.5 5 4.5 9.5a4.5 4.5 0 01-9 0c0-2 1-3.2 2-4.5 .3 1.6 1 2.3 1.8 2.5C11.3 8.3 11.2 5.5 12 3z"/></svg></span><span>Zentralheizung im Wohnungspreis enthalten</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="17" rx="1.5"/><circle cx="15" cy="12" r=".8" fill="currentColor"/><path d="M3 20h18"/></svg></span><span>Ebenerdiger Eingang</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19V7M3 15h18v4M21 15v-2.5A3 3 0 0018 9.5h-8V15"/><circle cx="6.5" cy="11.5" r="1.5"/></svg></span><span>Bettwäsche (überzogen)</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14v4H5zM6.5 8v12M17.5 8v12M6.5 20h11"/></svg></span><span>2 Handtücher+Badetuch+ Strandtuch / Person</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18M5 18l3.2-6.5H15l3.5 6.5M15 11.5L19 6"/></svg></span><span>Zwei Liegen für den Garten / Strand</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M10 17V8h3a2.6 2.6 0 010 5.2h-3"/></svg></span><span>Parkplatz im Hof - das Gartentor wird abends abgesperrt! (Fernsteuerung)</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5c3.2 4.2 3.2 14.8 0 19-3.2-4.2-3.2-14.8 0-19z"/><path d="M12 6v12"/></svg></span><span>Surfbretter</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="16" r="3.5"/><circle cx="18" cy="16" r="3.5"/><path d="M6 16l4-8h5l3 8M10 8H8"/></svg></span><span>Abstellplatz für Räder</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-5 9 5v9l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v9"/></svg></span><span>kleiner Abstellraum</span></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A6B87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.5" cy="9.5" r="5.5"/><path d="M13.5 13.5L20 20"/><circle cx="18" cy="6" r="1.4"/></svg></span><span>Tischtennis</span></li>
+<li><span class="ic muted" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6a6a6a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></span><span>Haustiere sind nicht erwünscht</span></li>
+</ul>
+</div>
+</div>
+</section>
 
-{% include karte.html %}
+<section id="lage" style="scroll-margin-top:96px" aria-label="Lage">
+<div style="display:flex;flex-direction:column;gap:24px" data-fade>
+<h2 style="font-size:21px;font-weight:700;line-height:1.43;color:#222222">Lage</h2>
+<div style="display:flex;flex-direction:column;gap:4px">
+<p style="font-size:16px;font-weight:400;line-height:1.5;color:#3f3f3f">Sie finden uns an der Adresse</p>
+<p style="font-size:16px;font-weight:600;line-height:1.25;color:#222222">Strandplatz 6, 7141 Podersdorf am See, Österreich</p>
+</div>
+<div class="emb" data-emb>
+<div class="emb-ph" style="min-height:320px">
+<p style="font-size:14px;font-weight:400;line-height:1.43;color:#3f3f3f;max-width:420px">Die Karte wird von Google Maps bereitgestellt. Beim Laden wird Ihre IP-Adresse an Google übertragen. Mehr dazu in der <a class="lnk" href="datenschutz.html">Datenschutzerklärung</a>.</p>
+<button type="button" class="btn-p" data-emb-btn>Karte laden</button>
+</div>
+<iframe hidden title="Karte: Strandplatz 6, Podersdorf am See" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2328.4990777252256!2d16.826098875939202!3d47.85747617121401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c6a1535648265%3A0xc282d2a366df5bda!2sStrandpl.%206%2C%207141%20Podersdorf%20am%20See!5e1!3m2!1sde!2sat!4v1792145655655!5m2!1sde!2sat" style="border:0;width:100%;height:320px;border-radius:14px" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
+<a class="btn-s" style="align-self:flex-start" href="https://www.google.at/maps/place/Ferienwohnung+Kaintz/@47.8574812,16.8265431,17z/data=!3m1!4b1!4m8!3m7!1s0x476c6a154a823983:0xb0b3a9940ac64f85!5m2!1s2018-06-11!2i3!8m2!3d47.8574776!4d16.8287318">In Google Maps öffnen</a>
+<div style="display:flex;flex-direction:column;gap:12px">
+<h3 style="font-size:20px;font-weight:600;line-height:1.2;letter-spacing:-0.18px;color:#222222">Aktuelles Wetter</h3>
+<div style="display:flex;flex-wrap:wrap;gap:12px">
+<a class="btn-s" href="https://www.wetteronline.at/wetter/podersdorf">Wettervorhersage</a>
+<a class="btn-s" href="https://www.feratel.com/webcams/oesterreich/burgenland/podersdorf-neusiedler-see-5900">Podersdorf-Webcam</a>
+</div>
+<p style="font-size:16px;font-weight:400;line-height:1.5;color:#3f3f3f;margin-top:4px">Für unsere Wassersportler – die besten Windprognosen:</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px">
+<a class="btn-s" href="https://www.windfinder.com/forecast/neusiedler_see_podersdorf">Windfinder</a>
+<a class="btn-s" href="https://www.windguru.cz/207075">Windguru</a>
+<a class="btn-s" href="https://www.getnora.app/home">Hey Nora</a>
+</div>
+</div>
+<div class="logos">
+<div class="ph" style="height:72px;border:1px solid #ebebeb;border-radius:14px;background:#ffffff"><img src="img/logos/Logo_BGL-NS%204C%20jpg.jpg" alt="Neusiedler See" style="max-width:100%;max-height:56px;object-fit:contain" onerror="this.parentNode.textContent=this.alt"></div>
+<div class="ph" style="height:72px;border:1px solid #ebebeb;border-radius:14px;background:#ffffff"><img src="img/logos/Logo_PODERSDORF_CMYK.jpg" alt="Podersdorf am See" style="max-width:100%;max-height:56px;object-fit:contain" onerror="this.parentNode.textContent=this.alt"></div>
+<div class="ph" style="height:72px;border:1px solid #ebebeb;border-radius:14px;background:#ffffff"><img src="img/logos/Logo_image003.jpg" alt="frischer Wind am See" style="max-width:100%;max-height:56px;object-fit:contain" onerror="this.parentNode.textContent=this.alt"></div>
+<div class="ph" style="height:72px;border:1px solid #ebebeb;border-radius:14px;background:#ffffff"><img src="img/logos/Logo_PODERSDORF_Signet_ganznahamwassergebaut_cmyk.jpg" alt="ganz nah am Wasser gebaut" style="max-width:100%;max-height:56px;object-fit:contain" onerror="this.parentNode.textContent=this.alt"></div>
+</div>
+</div>
+</section>
 
-<hr>
+<section id="zimmer-preise" style="scroll-margin-top:96px" aria-label="Zimmer und Preise">
+<div style="display:flex;flex-direction:column;gap:16px" data-fade>
+<h2 style="font-size:21px;font-weight:700;line-height:1.43;color:#222222">Zimmer und Preise</h2>
+<p style="font-size:16px;font-weight:400;line-height:1.5;color:#3f3f3f">Preise 2026 pro Nacht</p>
+<div class="tblbox">
+<table class="tbl">
+<thead><tr><th scope="col">Saison</th><th scope="col">Ganze Wohnung<br>64 m², max. 4 Personen</th><th scope="col">Verkleinerte Wohnung<br>44 m², max. 2 Personen</th></tr></thead>
+<tbody>
+<tr><th scope="row" style="background:#ffffff;font-weight:500">Hauptsaison (min 4 Nächte)</th><td style="font-weight:600">€ 130</td><td style="color:#6a6a6a">—</td></tr>
+<tr><th scope="row" style="background:#ffffff;font-weight:500">Nebensaison (ab 3 Nächten)</th><td style="font-weight:600">€ 130</td><td style="font-weight:600">€ 118</td></tr>
+<tr><th scope="row" style="background:#ffffff;font-weight:500">Nebensaison (2 Nächte)</th><td style="font-weight:600">€ 140</td><td style="font-weight:600">€ 128</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:14px;font-weight:400;line-height:1.43;color:#3f3f3f">Hauptsaison: 27.6.2026 bis 7.9.2026</p>
+<p style="font-size:14px;font-weight:400;line-height:1.43;color:#3f3f3f">Im Preis enthalten: Strom, Endreinigung, Heizung, Steuer und BurgenlandCard</p>
+<p style="font-size:14px;font-weight:400;line-height:1.43;color:#6a6a6a">exkl. Ortstaxe (€ 4,50/Pers. ab 18 Jahren/Nacht).</p>
+</div>
+</section>
 
-<h2 id="fotos"><i class="fas fa-camera"></i> Fotos</h2>
-
-<div class="gallery">
- {% assign image_files = site.static_files | where: "image", true %}
- {% for myimage in image_files | limit: 3 %}
-  <div>
-   <img src="{{ myimage.path }}" loading="lazy">
-  </div>
- {% endfor %}
 </div>
 
-<a href="/fotos.html">Mehr Fotos</a>
+<aside class="rail" id="anfrage" style="scroll-margin-top:96px" aria-label="Anfrage">
+<div class="card-r" data-fade>
+<h2 style="font-size:21px;font-weight:700;line-height:1.43;color:#222222">Anfrage</h2>
+<p style="margin-top:4px;font-size:14px;font-weight:400;line-height:1.43;color:#6a6a6a">Die aktuelle Verfügbarkeit sehen Sie im <a class="lnk" href="#verfuegbarkeit">Verfügbarkeitskalender</a>.</p>
+<div class="scrollbox" style="margin-top:16px">
+<form id="anfrage-form" action="https://formspree.io/f/xgaodqpl" method="POST" style="display:flex;flex-direction:column;gap:16px">
+<div class="fld"><label for="f-name" style="font-size:14px;font-weight:500;line-height:1.29;color:#6a6a6a">Name</label><input class="inp" id="f-name" name="name" type="text" autocomplete="name" required></div>
+<div class="fld"><label for="f-an" style="font-size:14px;font-weight:500;line-height:1.29;color:#6a6a6a">Anreise</label><input class="inp" id="f-an" name="anreise" type="date" required></div>
+<div class="fld"><label for="f-ab" style="font-size:14px;font-weight:500;line-height:1.29;color:#6a6a6a">Abreise</label><input class="inp" id="f-ab" name="abreise" type="date" required></div>
+<fieldset style="margin:0;padding:0;border:0;display:flex;flex-direction:column;gap:4px">
+<legend style="padding:0 0 4px;font-size:14px;font-weight:500;line-height:1.29;color:#6a6a6a">Zimmer</legend>
+<label class="rad"><input type="radio" name="zimmer" value="Ganze Wohnung (4 Personen)" checked>Ganze Wohnung (4 Personen)</label>
+<label class="rad"><input type="radio" name="zimmer" value="Verkleinerte Wohnung (3 Personen; nur Vor- bzw Nachsaison)">Verkleinerte Wohnung (3 Personen; nur Vor- bzw Nachsaison)</label>
+</fieldset>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:16px"><label for="f-erw" style="font-size:14px;font-weight:400;line-height:1.43;color:#3f3f3f">Anzahl Erwachsene (ab 18 Jahren)</label><input class="num" id="f-erw" name="erwachsene" type="number" min="0" inputmode="numeric"></div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:16px"><label for="f-k1" style="font-size:14px;font-weight:400;line-height:1.43;color:#3f3f3f">Anzahl Kinder (10 - 18 Jahre)</label><input class="num" id="f-k1" name="kinder_10_bis_18_jahre" type="number" min="0" inputmode="numeric"></div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:16px"><label for="f-k2" style="font-size:14px;font-weight:400;line-height:1.43;color:#3f3f3f">Anzahl Kinder (3 - 9 Jahre)</label><input class="num" id="f-k2" name="kinder_3_bis_9_jahre" type="number" min="0" inputmode="numeric"></div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:16px"><label for="f-k3" style="font-size:14px;font-weight:400;line-height:1.43;color:#3f3f3f">Anzahl Kinder (unter 3 Jahren)</label><input class="num" id="f-k3" name="kinder_unter_3_jahre" type="number" min="0" inputmode="numeric"></div>
+<fieldset style="margin:0;padding:0;border:0;display:flex;flex-direction:column;gap:4px">
+<legend style="padding:0 0 4px;font-size:14px;font-weight:400;line-height:1.43;color:#3f3f3f">Gratis-Sonderkarte für Toröffner beim Seezugang für Boller- Kinderwagen oder Rollstuhl u.a. erwünscht</legend>
+<div style="display:flex;gap:24px"><label class="rad"><input type="radio" name="gratis_sonderkarte_toeroeffner" value="Ja">Ja</label><label class="rad"><input type="radio" name="gratis_sonderkarte_toeroeffner" value="Nein" checked>Nein</label></div>
+</fieldset>
+<fieldset style="margin:0;padding:0;border:0;display:flex;flex-direction:column;gap:4px">
+<legend style="padding:0 0 4px;font-size:14px;font-weight:400;line-height:1.43;color:#3f3f3f">Gitterbett erwünscht</legend>
+<div style="display:flex;gap:24px"><label class="rad"><input type="radio" name="gitterbett" value="Ja">Ja</label><label class="rad"><input type="radio" name="gitterbett" value="Nein" checked>Nein</label></div>
+</fieldset>
+<div class="fld"><label for="f-mail" style="font-size:14px;font-weight:500;line-height:1.29;color:#6a6a6a">E-Mail Adresse</label><input class="inp" id="f-mail" name="email" type="email" autocomplete="email" required></div>
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+<input type="hidden" name="_subject" value="Neue Anfrage – Ferienwohnung Kaintz">
+<button type="submit" class="btn-p" id="form-btn" style="width:100%">Senden</button>
+<p id="form-status" role="status" aria-live="polite" style="font-size:14px;line-height:1.43;color:#3f3f3f" hidden></p>
+</form>
+</div>
+</div>
+</aside>
 
-<hr>
-
-<h2 id="anreise"><i class="fas fa-car"></i> Anreise</h2>
-
-{% capture anreise %}{% include anreise.md %}{% endcapture %}
-{{ anreise | markdownify }}
-
-<hr>
-
-<h2 id="wetter"><i class="fas fa-sun"></i> Aktuelles Wetter</h2>
-
-{% include wetter.html %}
-
-{% capture wetter %}{% include wetter.md %}{% endcapture %}
-{{ wetter | markdownify }}
-
-<div id="podersdorf">
- <img src="/assets/podersdorf/Logo_BGL-NS 4C jpg.jpg" alt="neusiedler see" />
- <img src="/assets/podersdorf/Logo_PODERSDORF_CMYK.jpg" alt="Podersdorf am See" />
- <img src="/assets/podersdorf/Logo_image003.jpg" alt="frischer Wind am See" />
- <img src="/assets/podersdorf/Logo_PODERSDORF_Signet_ganznahamwassergebaut_cmyk.jpg" alt="Podersdorf am See. ganz nah am Wasser gebaut"/>
+</div>
 </div>
 
-<hr>
+<!-- Verfügbarkeit -->
+<section id="verfuegbarkeit" class="wrap" style="margin-top:64px;scroll-margin-top:96px" aria-label="Verfügbarkeit">
+<div style="display:flex;flex-direction:column;gap:24px" data-fade>
+<h2 style="font-size:21px;font-weight:700;line-height:1.43;color:#222222">Verfügbarkeit</h2>
+<div class="emb" data-emb>
+<div class="emb-ph" style="min-height:240px">
+<p style="font-size:14px;font-weight:400;line-height:1.43;color:#3f3f3f;max-width:420px">Der Kalender wird von Google Kalender bereitgestellt. Beim Laden wird Ihre IP-Adresse an Google übertragen. Mehr dazu in der <a class="lnk" href="datenschutz.html">Datenschutzerklärung</a>.</p>
+<button type="button" class="btn-p" data-emb-btn>Kalender laden</button>
+</div>
+<iframe hidden title="Verfügbarkeitskalender" data-src="https://calendar.google.com/calendar/embed?src=mm6gcf6jet40kfdedf9bvo62pc%40group.calendar.google.com&amp;ctz=Europe%2FVienna&amp;src=austrian__de%40holiday.calendar.google.com" style="border:0;width:100%;height:600px;border-radius:14px" loading="lazy"></iframe>
+</div>
+</div>
+</section>
 
-<h2 id="anfrage"><i class="fas fa-envelope"></i> Anfrage</h2>
+<!-- Anreise -->
+<section id="anreise" class="wrap" style="margin-top:64px;scroll-margin-top:96px" aria-label="Anreise">
+<div style="display:flex;flex-direction:column;gap:24px" data-fade>
+<h2 style="font-size:21px;font-weight:700;line-height:1.43;color:#222222">Anreise</h2>
+<div class="times">
+<div style="background:#F3F8FA;border:1px solid #D9E8EE;border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:8px"><div style="font-size:14px;font-weight:500;line-height:1.29;color:#6a6a6a">Frühester Check-in</div><div style="font-size:28px;font-weight:700;line-height:1.43;color:#222222">14:00</div></div>
+<div style="background:#F3F8FA;border:1px solid #D9E8EE;border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:8px"><div style="font-size:14px;font-weight:500;line-height:1.29;color:#6a6a6a">Spätester Check-out</div><div style="font-size:28px;font-weight:700;line-height:1.43;color:#222222">10:00</div></div>
+</div>
+<div class="pair"><img src="img/haus-front.jpg" alt="Außenansicht des Hauses mit Eingangstor" loading="lazy"><img src="img/tuer.jpg" alt="Eingangstür mit gelben Blumen" loading="lazy" style="object-position:center 35%"></div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px">
+<p style="font-size:16px;font-weight:600;line-height:1.25;color:#222222">Strandplatz 6, 7141 Podersdorf am See, Österreich</p>
+<a class="btn-s" href="https://www.google.at/maps/place/Ferienwohnung+Kaintz/@47.8574812,16.8265431,17z/data=!3m1!4b1!4m8!3m7!1s0x476c6a154a823983:0xb0b3a9940ac64f85!5m2!1s2018-06-11!2i3!8m2!3d47.8574776!4d16.8287318">In Google Maps öffnen</a>
+</div>
+</div>
+</section>
 
-{% include anfrage.html %}
+</main>
 
-<hr>
+<div class="wave" aria-hidden="true">
+<svg class="wave-a" viewBox="0 0 2880 80" preserveAspectRatio="none"><path d="M0 40 q 180 -36 360 0 t 360 0 q 180 -36 360 0 t 360 0 q 180 -36 360 0 t 360 0 q 180 -36 360 0 t 360 0 L2880 80 L0 80 Z" fill="#E3EFF4"/></svg>
+<svg class="wave-b" viewBox="0 0 2880 80" preserveAspectRatio="none"><path d="M0 40 q 180 -36 360 0 t 360 0 q 180 -36 360 0 t 360 0 q 180 -36 360 0 t 360 0 q 180 -36 360 0 t 360 0 L2880 80 L0 80 Z" fill="#F3F8FA"/></svg>
+</div>
+<footer style="margin-top:0;background:#F3F8FA">
+<div class="wrap" style="padding-top:48px;padding-bottom:24px;display:flex;flex-direction:column;gap:32px">
+<div class="foot">
+<div style="display:flex;flex-direction:column;gap:12px">
+<img src="img/logo.svg" alt="" width="72" height="45" style="display:block" loading="lazy">
+<div style="font-size:16px;font-weight:500;line-height:1.25">Ferienwohnung Kaintz</div>
+<div style="font-size:14px;font-weight:400;line-height:1.43;color:#3f3f3f">Strandplatz 6<br>7141 Podersdorf am See<br>Österreich</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="font-size:16px;font-weight:500;line-height:1.25">Seite</div>
+<a href="#fotos">Fotos</a>
+<a href="#warum">Warum zu uns</a>
+<a href="#ausstattung">Ausstattung</a>
+<a href="#lage">Lage</a>
+<a href="#zimmer-preise">Zimmer und Preise</a>
+<a href="#anfrage">Anfrage</a>
+<a href="#verfuegbarkeit">Verfügbarkeit</a>
+<a href="#anreise">Anreise</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="font-size:16px;font-weight:500;line-height:1.25">Podersdorf am See</div>
+<a href="https://www.wetteronline.at/wetter/podersdorf">Wettervorhersage</a>
+<a href="https://www.feratel.com/webcams/oesterreich/burgenland/podersdorf-neusiedler-see-5900">Podersdorf-Webcam</a>
+<a href="https://www.google.at/maps/place/Ferienwohnung+Kaintz/@47.8574812,16.8265431,17z/data=!3m1!4b1!4m8!3m7!1s0x476c6a154a823983:0xb0b3a9940ac64f85!5m2!1s2018-06-11!2i3!8m2!3d47.8574776!4d16.8287318">Google Maps</a>
+</div>
+</div>
+<div class="foot-legal" style="padding-top:24px;border-top:1px solid #ebebeb;display:flex;flex-wrap:wrap;gap:8px 24px;font-size:13px;font-weight:400;line-height:1.23;color:#6a6a6a"><span>Ferienwohnung Kaintz · Strandplatz 6, 7141 Podersdorf am See</span><a href="impressum.html" style="color:#222222;text-decoration:none">Impressum</a><a href="datenschutz.html" style="color:#222222;text-decoration:none">Datenschutz</a><a href="https://wbk-webdesign.at/" style="color:#222222;text-decoration:none">Website von WBK</a></div>
+<p style="margin:0;font-size:12px;line-height:1.5;color:#6a6a6a">Bildnachweis (Wikimedia Commons, verkleinert): Hafen mit Leuchtturm – <a href="https://commons.wikimedia.org/wiki/File:Podersdorf_Sunset.JPG" style="color:#6a6a6a">Corradox</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de" style="color:#6a6a6a">CC BY-SA 3.0</a> · Nordstrand – <a href="https://commons.wikimedia.org/wiki/File:Podersdorf_Nordstrand.jpg" style="color:#6a6a6a">Balazs Barnucz</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de" style="color:#6a6a6a">CC BY-SA 3.0</a> · Blaue Stunde – <a href="https://commons.wikimedia.org/wiki/File:Neusiedler_See_lake-neusidl_sunset_blue_hour_panorama_landscape_MD284.jpg" style="color:#6a6a6a">Mike Duchstein</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" style="color:#6a6a6a">CC BY-SA 4.0</a></p>
+</div>
+</footer>
 
-<h2 id="verfuegbarkeit"><i class="fas fa-calendar-alt"></i> Verfügbarkeit</h2>
+<div class="bar">
+<div style="display:flex;flex-direction:column;gap:2px"><div style="font-size:16px;font-weight:600;line-height:1.25">ab € 118 pro Nacht</div><div style="font-size:13px;font-weight:400;line-height:1.23;color:#6a6a6a">Preise 2026</div></div>
+<a class="btn-p" href="#anfrage">Jetzt anfragen</a>
+</div>
 
-{% include kalender.html %}
+</div>
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
