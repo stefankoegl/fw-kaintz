@@ -160,7 +160,7 @@ if(hdr)ScrollTrigger.create({start:40,onEnter:function(){gsap.to(hdr,{boxShadow:
 var h1=$('.kw-hero-card h1');
 if(h1){
 var t1=h1.textContent;h1.setAttribute('aria-label',t1);h1.textContent='';
-t1.split('').forEach(function(ch){var sp=document.createElement('span');sp.className='ch';sp.setAttribute('aria-hidden','true');sp.textContent=ch===' '?' ':ch;h1.appendChild(sp)});
+t1.split(' ').forEach(function(word,wi,arr){var w=document.createElement('span');w.className='wd';w.setAttribute('aria-hidden','true');word.split('').forEach(function(ch){var sp=document.createElement('span');sp.className='ch';sp.textContent=ch;w.appendChild(sp)});h1.appendChild(w);if(wi<arr.length-1)h1.appendChild(document.createTextNode(' '))});
 gsap.from(h1.querySelectorAll('.ch'),{y:36,opacity:0,rotation:8,duration:0.7,ease:'back.out(2)',stagger:0.035,delay:0.9});
 }
 /* Sonnen im Titel schweben */
